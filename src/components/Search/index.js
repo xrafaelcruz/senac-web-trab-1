@@ -15,7 +15,7 @@ const Search = ({ setFilter }) => {
 
     return (
         <div className="form-row">
-            <div className="form-group col-md-9">
+            <div className="form-group col-md-10 col-sm-8">
                 <label htmlFor="search">Buscar</label>
                 <input
                     id="search"
@@ -24,16 +24,17 @@ const Search = ({ setFilter }) => {
                     {...register('search')}
                     onChange={updateFilter}
                 />
-            </div>     
-            <div className="form-group col-md-3 d-flex justify-content-center align-items-end">
+            </div>
+            
+            <div className="form-group col-md-2 col-sm-4 d-flex justify-content-start align-items-end">
                 <input
                     type="button"
                     value="Limpar"
                     onClick={clearField}
-                    className="btn btn-secondary"
+                    className="btn btn-secondary form-control"
                 />
             </div>         
-        </div>  
+        </div>
     );
 };
 

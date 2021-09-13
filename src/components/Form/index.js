@@ -79,7 +79,7 @@ const Form = memo(function({ carList, setCarList, selectedCar, setSelectedCar })
             }
 
             <div className="form-row">
-                <div className="form-group col-md-6 col-sm-6 col-xs-12">
+                <div className="form-group col-md-6 col-sm-6">
                     <label htmlFor="model">Modelo</label>
                     <input
                         autoFocus
@@ -91,7 +91,7 @@ const Form = memo(function({ carList, setCarList, selectedCar, setSelectedCar })
                     <Errors error={errors.model} field="model" />
                 </div>            
                 
-                <div className="form-group col-md-6 col-sm-6 col-xs-12">
+                <div className="form-group col-md-6 col-sm-6">
                     <label htmlFor="brand">Marca</label>
                     <select
                         id="brand"
@@ -108,7 +108,7 @@ const Form = memo(function({ carList, setCarList, selectedCar, setSelectedCar })
                     <Errors error={errors.brand} field="brand" />
                 </div>
     
-                <div className="form-group col-md-6 col-sm-6 col-xs-12">
+                <div className="form-group col-md-6 col-sm-6">
                     <label htmlFor="year">Ano</label>
                     <input
                         id="year"
@@ -119,7 +119,7 @@ const Form = memo(function({ carList, setCarList, selectedCar, setSelectedCar })
                     <Errors error={errors.year} field="year" />
                 </div>            
                 
-                <div className="form-group col-md-6 col-sm-6 col-xs-12">
+                <div className="form-group col-md-6 col-sm-6">
                     <label htmlFor="price">Preço R$</label>
                     <input
                         id="price"

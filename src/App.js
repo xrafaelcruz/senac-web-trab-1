@@ -4,7 +4,7 @@ import AppBody from 'components/AppBody'
 import { NotificationContainer } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
-// NotificationContainer gera erro no console estando entro de strict mode
+// NotificationContainer gera erro no console estando dentro de strict mode
 
 const App = () => {
   return (

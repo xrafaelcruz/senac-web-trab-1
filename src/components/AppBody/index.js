@@ -16,7 +16,7 @@ const AppBody = () => {
 
   return (
     <div className="row">
-        <div className="col-md-4 col-sm-12 col-xs-12 mt-2 d-flex justify-content-center align-items-start">
+        <div className="col-md-4 col-sm-12 mt-2 d-flex justify-content-center align-items-start">
           <Form 
             carList={carList}
             setCarList={setCarList} 
@@ -25,17 +25,19 @@ const AppBody = () => {
           />
         </div>
 
-        <div className="col-md-8 col-sm-12 col-xs-12 mt-2 d-flex justify-content-start align-items-start flex-column">
-          <Resume carList={carList} />
+        <div className="col-md-8 col-sm-12 mt-2 d-flex justify-content-start align-items-start flex-column">
+          <div className="container">
+            <Resume carList={carList} />
 
-          <Search setFilter={setFilter} />
+            <Search setFilter={setFilter} />
 
-          <Table 
-            carList={carList}
-            setCarList={setCarList}
-            setSelectedCar={setSelectedCar}
-            filter={filter}
-          />
+            <Table 
+              carList={carList}
+              setCarList={setCarList}
+              setSelectedCar={setSelectedCar}
+              filter={filter}
+            />
+          </div>
         </div>
     </div>
   )
